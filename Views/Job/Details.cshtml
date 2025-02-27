@@ -1,0 +1,16 @@
+@model TechJobPortal.Models.JobListing
+
+<h2>Job Details</h2>
+<p><strong>Title:</strong> @Model.Title</p>
+<p><strong>Company:</strong> @Model.CompanyName</p>
+<p><strong>Location:</strong> @Model.Location</p>
+
+<!-- Dropdown for job type selection -->
+<label for="jobType">Job Type:</label>
+<select id="jobType" class="form-control" asp-for="JobType" asp-items="Html.GetEnumSelectList<JobType>()" disabled>
+</select>
+
+<p><strong>Posted On:</strong> @Model.PostedDate.ToString("MMM dd, yyyy")</p>
+
+<a asp-action="Index" class="btn btn-primary">Back to Job Listings</a>
+

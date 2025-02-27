@@ -1,0 +1,57 @@
+/* Ensure proper spacing and layout */
+body {
+    margin-bottom: 60px;
+}
+
+/* Make containers responsive */
+.container {
+    max-width: 100%;
+    padding: 15px;
+}
+
+/* Improve navbar responsiveness */
+.navbar-nav {
+    flex-direction: column;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    .navbar-nav {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Ensure buttons and form controls are mobile-friendly */
+.btn {
+    width: 100%;
+}
+
+@media (min-width: 576px) {
+    .btn {
+        width: auto;
+    }
+}
+
+/* Adjust job listing cards for better readability */
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card-body {
+        text-align: left;
+    }
+}
+
+/* Improve dropdown appearance */
+select.form-control {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 5px;
+}
